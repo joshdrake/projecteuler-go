@@ -9,7 +9,7 @@ func Maximum(a, b int) int {
 	return b
 }
 
-func ArrayMinimum(a []int) int {
+func ArrayMaximum(a []int) int {
 	sort.Ints(a)
 	return a[len(a) - 1]
 }
@@ -21,7 +21,7 @@ func Minimum(a, b int) int {
 	return b
 }
 
-func ArrayMaximum(a []int) int {
+func ArrayMinimum(a []int) int {
 	sort.Ints(a)
 	return a[0]
 }
