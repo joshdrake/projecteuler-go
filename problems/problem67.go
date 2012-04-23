@@ -12,8 +12,6 @@ import (
 )
 
 func main() {
-	start := time.Now()
-
 	file, err := os.Open("triangle.txt")
 
 	if err != nil {
@@ -36,6 +34,7 @@ func main() {
 	}
 
 	nums := make([][]int, len(rows))
+	start := time.Now()
 
 	for y, row := range rows {
 		cols := strings.Split(row, " ")
